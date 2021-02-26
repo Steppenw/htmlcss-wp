@@ -5,17 +5,33 @@
 }
 
 .center {
-  padding: 20px 80px;
+  padding: 20px 100px;
 }
 
 header {
-  background-color: rgb(229, 121, 230);
-  height: 130px;
+  margin-bottom: 30px;
 }
 
-div.preview {
-  background-color: rgb(225, 214, 122);
-  height: 400px;
+header img {
+  width: 190px;
+  padding-right: 20px;
+  border-right: 1px solid lightgrey;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 8px;
+}
+
+nav ul li a {
+  color: grey;
+  text-decoration: none;
+}
+
+div.hero {
+  background-image: url('img/banner.jpg');
+  background-position: center;
+  height: 420px;
   margin: 30px 0;
 }
 
@@ -32,12 +48,8 @@ div.wrapper::after {
 .wrapper > * {
   float: left;
   background-color: rgb(171, 207, 231);
-  margin-bottom: 20px;
-}
-
-nav {
-  height: 80px;
-  width: 100%;
+  margin-top: 1.5%;
+  margin-bottom: 1.5%;
 }
 
 aside.left, aside.right {
