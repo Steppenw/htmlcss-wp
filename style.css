@@ -4,11 +4,15 @@
   padding: 0;
 }
 
-.center {
-  padding: 20px 100px;
+.grey {
+  color: grey;
 }
 
-header {
+.center {
+  margin: 30px 100px 0;
+}
+
+.center > *, main > .main-title {
   margin-bottom: 30px;
 }
 
@@ -24,21 +28,26 @@ nav ul li {
 }
 
 nav ul li a {
-  color: grey;
   text-decoration: none;
+  color: grey;
 }
 
 div.hero {
-  background-image: url('img/banner.jpg');
-  background-position: center;
+  background: url('img/banner.jpg') center;
   height: 420px;
-  margin: 30px 0;
+  color: white;
 }
 
-div.wrapper {
-  background-color:  rgb(1, 134, 255);
+.opacity {
+  background-color: rgba(10, 10, 10, 0.3);
+  height: 100%;
+  border-radius: 10px;
 }
 
+div.hero-title {
+  padding-left: 50px;
+  padding-top: 270px;
+}
 div.wrapper::after {
   content: "";
   display: table;
@@ -47,25 +56,46 @@ div.wrapper::after {
 
 .wrapper > * {
   float: left;
-  background-color: rgb(171, 207, 231);
-  margin-top: 1.5%;
-  margin-bottom: 1.5%;
+  text-align: justify;
 }
 
 aside.left, aside.right {
-  width: 25%;
-  height: 600px;
+  width: 20%;
 }
 
 article {
-  width: 48%;
-  margin-left: 1%;
-  margin-right: 1%;
-  height: 600px;
+  width: 55%;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+}
+
+.fig {
+  height: 200px;
+}
+
+.fig-left {
+  background: url('img/img-1.jpg') center;
+  background-size: contain;
+}
+
+.fig-middle {
+  background: url('img/banner-2.jpg') center;
+  background-size: cover;
+}
+
+.fig-right {
+  background: url('img/img-3.jpg') no-repeat center;
+  background-size: cover;
+}
+
+.wrapper h4 {
+  margin: 10px 0;
 }
 
 footer {
-  height: 60px;
-  background-color: rgb(136, 1, 254);
-  margin-top: 10px;
+  text-align: center;
+}
+
+footer span {
+  color: red;
 }
