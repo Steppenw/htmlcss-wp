@@ -69,21 +69,21 @@ article {
   margin-right: 2.5%;
 }
 
-.fig {
+.wrapper .fig {
   height: 200px;
 }
 
-.fig-left {
+.fig.fig-left {
   background: url('img/img-1.jpg') center;
   background-size: contain;
 }
 
-.fig-middle {
+.fig.fig-middle {
   background: url('img/banner-2.jpg') center;
   background-size: cover;
 }
 
-.fig-right {
+.fig.fig-right {
   background: url('img/img-3.jpg') no-repeat center;
   background-size: cover;
 }
